@@ -66,7 +66,7 @@ const Navbar = () => {
             "transition-colors font-medium",
             scrolled ? "text-forest-700 hover:text-forest-600" : "text-white hover:text-white/80"
           )}>Kontakt</a>
-          <a href="#kontakt" className="forest-button">Boka Demo</a>
+          <a href="#kontakt" className="forest-button">Kontakt</a>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -94,7 +94,7 @@ const Navbar = () => {
             <a href="#analys" className="text-forest-700 py-2 px-4 hover:bg-forest-50 rounded-md transition-colors" onClick={() => setIsMenuOpen(false)}>AI-analys</a>
             <a href="#inventering" className="text-forest-700 py-2 px-4 hover:bg-forest-50 rounded-md transition-colors" onClick={() => setIsMenuOpen(false)}>Inventering</a>
             <a href="#kontakt" className="text-forest-700 py-2 px-4 hover:bg-forest-50 rounded-md transition-colors" onClick={() => setIsMenuOpen(false)}>Kontakt</a>
-            <a href="#kontakt" className="forest-button mx-4 text-center" onClick={() => setIsMenuOpen(false)}>Boka Demo</a>
+            <a href="#kontakt" className="forest-button mx-4 text-center" onClick={() => setIsMenuOpen(false)}>Kontakt</a>
           </div>
         </div>
       )}
