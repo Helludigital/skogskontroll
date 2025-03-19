@@ -1,3 +1,4 @@
+
 import React from 'react';
 const ForestAnalysis = () => {
   return <section id="analys" className="py-20 bg-forest-50/70">
@@ -34,7 +35,9 @@ const ForestAnalysis = () => {
             
             <ul className="space-y-4">
               {["Trädslag artfördelning", "Stressade träd", "Granbarkborre angripna träd", "Stormfällda träd", "Virkesvolym", "Trädvolym", "Trädklasser", "Träd antal", "Trädhöjder"].map((item, index) => <li key={index} className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-forest-500 flex-shrink-0 mt-2"></div>
+                  <div className="w-6 h-6 rounded-full bg-forest-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-sm font-medium">{index + 1}</span>
+                  </div>
                   <span className="text-forest-700">{item}</span>
                 </li>)}
             </ul>
