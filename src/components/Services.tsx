@@ -1,3 +1,4 @@
+
 const Services = () => {
   const services = [
     {
@@ -14,7 +15,7 @@ const Services = () => {
     {
       title: "Skadeinventering",
       description: "Identifiera och kartlägg skador i skogsbeståndet för snabba åtgärder.",
-      image: "/lovable-uploads/d9ac5e10-c711-4bac-9b7a-1b9990a7d5ed.png",
+      image: "/lovable-uploads/e6ba8e02-e775-4850-b97b-5931e41308d4.png",
       features: [
         "Stormskador och vindfällen",
         "Insektsangrepp",
@@ -25,7 +26,7 @@ const Services = () => {
     {
       title: "Gallringskartläggning",
       description: "Exakt kartläggning av gallringsbehov med detaljerad analys av beståndet.",
-      image: "/lovable-uploads/2535eec9-2611-496a-ad6a-21df9872435e.png",
+      image: "/lovable-uploads/e6ba8e02-e775-4850-b97b-5931e41308d4.png",
       features: [
         "Gallringsindex",
         "Individanalys av träd",
@@ -36,7 +37,7 @@ const Services = () => {
     {
       title: "Skogsbruksplanering",
       description: "Omfattande underlag för effektiv planering och förvaltning av skogsmark.",
-      image: "/lovable-uploads/eeff33b7-5850-4336-977a-b0beec3b1ed6.png",
+      image: "/lovable-uploads/e6ba8e02-e775-4850-b97b-5931e41308d4.png",
       features: [
         "Uppdaterad skogsbruksplan",
         "Avverkningsunderlag",
