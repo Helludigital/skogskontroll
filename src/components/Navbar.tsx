@@ -29,22 +29,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <svg 
-            viewBox="0 0 24 24" 
-            className="w-8 h-8 text-forest-700" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
-            strokeLinejoin="round"
-          >
-            <polygon points="12 2 22 12 12 22 2 12 12 2" />
-            <line x1="12" y1="22" x2="12" y2="15" />
-            <line x1="12" y1="2" x2="12" y2="9" />
-            <line x1="2" y1="12" x2="9" y2="12" />
-            <line x1="22" y1="12" x2="15" y2="12" />
-          </svg>
-          <span className="text-xl font-semibold tracking-tight text-forest-800 font-serif">SkogsKontroll</span>
+          <img 
+            src="/lovable-uploads/d6ec065a-8ed9-4c33-8b08-b97ca4ed4fb4.png" 
+            alt="SkogsKontroll Logo" 
+            className="h-8"
+          />
         </a>
 
         {/* Desktop Navigation */}

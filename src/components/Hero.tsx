@@ -4,19 +4,9 @@ import { ArrowDown } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen pt-24 overflow-hidden flex items-center">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-forest-50 to-forest-100 -z-10"></div>
+      {/* Clean background with subtle gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-forest-50 -z-10"></div>
       
-      {/* Background patterns */}
-      <div className="absolute inset-0 opacity-5 -z-10">
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-          <pattern id="forest-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="currentColor" className="text-forest-900" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#forest-pattern)" />
-        </svg>
-      </div>
-
       <div className="container mx-auto px-4 md:px-8 py-12 md:py-24 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 z-10 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-forest-800 mb-6">
