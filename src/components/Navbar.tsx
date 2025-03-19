@@ -33,13 +33,13 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/d6ec065a-8ed9-4c33-8b08-b97ca4ed4fb4.png" 
               alt="SkogsKontroll Logo" 
-              className="h-8"
+              className="h-10" // Increased from h-8 to h-10
             />
           ) : (
             <img 
               src="/lovable-uploads/b37e6a29-e9d9-461a-b2b6-c5d56b8b447c.png" 
               alt="SkogsKontroll Logo White" 
-              className="h-8"
+              className="h-10" // Increased from h-8 to h-10
             />
           )}
         </a>
