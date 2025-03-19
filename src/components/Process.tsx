@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from "@/lib/utils";
@@ -52,9 +51,13 @@ const Process = () => {
       title: "Flygning",
       points: [],
       icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-16 h-16 text-forest-600">
-          <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-        </svg>
+        <div className="w-16 h-16">
+          <img 
+            src="/lovable-uploads/3f25bc0f-c6df-433b-9337-841fca8583ae.png" 
+            alt="Drönare" 
+            className="w-full h-full object-contain"
+          />
+        </div>
       )
     },
     {
