@@ -1,30 +1,20 @@
-
 import { ArrowDown } from "lucide-react";
 import { useEffect, useState } from "react";
-
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  return (
-    <section className="relative min-h-screen pt-24 overflow-hidden flex items-center">
+  return <section className="relative min-h-screen pt-24 overflow-hidden flex items-center">
       {/* Full-screen forest image background */}
       <div className="absolute inset-0 -z-10">
-        <img 
-          src="/lovable-uploads/146b93a0-0a36-4d24-b7e9-7672ad743313.png" 
-          alt="Flygfoto över skog" 
-          className="w-full h-full object-cover"
-        />
+        <img src="/lovable-uploads/146b93a0-0a36-4d24-b7e9-7672ad743313.png" alt="Flygfoto över skog" className="w-full h-full object-cover" />
         {/* Semi-transparent overlay to improve text readability */}
         <div className="absolute inset-0 bg-forest-900/30"></div>
       </div>
@@ -45,14 +35,11 @@ const Hero = () => {
         
         <div className="md:w-1/2 mt-12 md:mt-0 relative z-10">
           <div className="relative w-full h-[400px] md:h-[500px]">
-            <div className="absolute w-[90%] h-auto right-0 rounded-2xl shadow-2xl overflow-hidden animate-drone-float p-4"
-              style={{ animationDelay: "0.5s" }}>
+            <div className="absolute w-[90%] h-auto right-0 rounded-2xl shadow-2xl overflow-hidden animate-drone-float p-4" style={{
+            animationDelay: "0.5s"
+          }}>
               {/* Removed background-color and backdrop-blur from this container div */}
-              <img 
-                src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" 
-                alt="Drönare över skog" 
-                className="w-full h-auto rounded"
-              />
+              <img src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" alt="Drönare över skog" className="w-full h-auto rounded" />
             </div>
             {/* Removed the bottom/left forest map image */}
           </div>
@@ -60,40 +47,29 @@ const Hero = () => {
       </div>
       
       {/* Floating drone image */}
-      <div 
-        className="fixed z-30 w-24 md:w-28 lg:w-32"
-        style={{
-          top: `${30 + scrollY * 0.05}%`,
-          left: `${20 + Math.sin(scrollY * 0.01) * 10}%`,
-          transform: `rotate(${scrollY * 0.05}deg)`,
-          transition: 'transform 0.1s ease-out',
-        }}
-      >
+      <div className="fixed z-30 w-24 md:w-28 lg:w-32" style={{
+      top: `${30 + scrollY * 0.05}%`,
+      left: `${20 + Math.sin(scrollY * 0.01) * 10}%`,
+      transform: `rotate(${scrollY * 0.05}deg)`,
+      transition: 'transform 0.1s ease-out'
+    }}>
         {/* Removed opacity class to show full transparency */}
-        <img 
-          src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" 
-          alt="Flygande drönare" 
-          className="w-full h-auto"
-        />
+        
       </div>
       
       {/* Side-scrolling drone image that appears when scrolling down */}
-      <div 
-        className="fixed z-30 w-32 md:w-40 lg:w-48"
-        style={{
-          top: `${60}%`,
-          left: `${Math.min(0, -100 + scrollY * 0.2)}%`, // Starts off-screen (-100%) and moves in as user scrolls
-          transform: `rotate(${-15 + Math.sin(scrollY * 0.02) * 5}deg)`, // Slight rotation with subtle movement
-          opacity: Math.min(1, Math.max(0, (scrollY - 200) / 300)), // Fades in between 200-500px scroll
-          transition: 'transform 0.2s ease-out',
-          display: scrollY > 100 ? 'block' : 'none', // Only show after scrolling 100px
-        }}
-      >
-        <img 
-          src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" 
-          alt="Flygande drönare från sidan" 
-          className="w-full h-auto"
-        />
+      <div className="fixed z-30 w-32 md:w-40 lg:w-48" style={{
+      top: `${60}%`,
+      left: `${Math.min(0, -100 + scrollY * 0.2)}%`,
+      // Starts off-screen (-100%) and moves in as user scrolls
+      transform: `rotate(${-15 + Math.sin(scrollY * 0.02) * 5}deg)`,
+      // Slight rotation with subtle movement
+      opacity: Math.min(1, Math.max(0, (scrollY - 200) / 300)),
+      // Fades in between 200-500px scroll
+      transition: 'transform 0.2s ease-out',
+      display: scrollY > 100 ? 'block' : 'none' // Only show after scrolling 100px
+    }}>
+        
       </div>
       
       {/* Scroll indicator */}
@@ -101,8 +77,6 @@ const Hero = () => {
         <span className="text-white mb-2 drop-shadow-md">Scroll ner</span>
         <ArrowDown className="w-6 h-6 text-white drop-shadow-md" />
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
