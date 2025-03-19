@@ -29,11 +29,19 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <a href="#" className="flex items-center gap-2">
-          <img 
-            src="/lovable-uploads/d6ec065a-8ed9-4c33-8b08-b97ca4ed4fb4.png" 
-            alt="SkogsKontroll Logo" 
-            className="h-8"
-          />
+          {scrolled ? (
+            <img 
+              src="/lovable-uploads/d6ec065a-8ed9-4c33-8b08-b97ca4ed4fb4.png" 
+              alt="SkogsKontroll Logo" 
+              className="h-8"
+            />
+          ) : (
+            <img 
+              src="/lovable-uploads/b37e6a29-e9d9-461a-b2b6-c5d56b8b447c.png" 
+              alt="SkogsKontroll Logo White" 
+              className="h-8"
+            />
+          )}
         </a>
 
         {/* Desktop Navigation */}
