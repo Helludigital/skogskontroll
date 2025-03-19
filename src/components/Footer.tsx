@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-forest-800 text-white py-12">
@@ -6,22 +5,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <svg 
-                viewBox="0 0 24 24" 
-                className="w-8 h-8 text-forest-300" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-              >
-                <polygon points="12 2 22 12 12 22 2 12 12 2" />
-                <line x1="12" y1="22" x2="12" y2="15" />
-                <line x1="12" y1="2" x2="12" y2="9" />
-                <line x1="2" y1="12" x2="9" y2="12" />
-                <line x1="22" y1="12" x2="15" y2="12" />
-              </svg>
-              <span className="text-xl font-semibold tracking-tight font-serif">SkogsKontroll</span>
+              <img 
+                src="/lovable-uploads/b37e6a29-e9d9-461a-b2b6-c5d56b8b447c.png" 
+                alt="SkogsKontroll Logo White" 
+                className="h-10" 
+              />
             </div>
             <p className="text-forest-300">
               Effektiv skogsplanering med hjälp av drönare och AI-analys.
