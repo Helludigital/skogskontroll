@@ -64,12 +64,17 @@ const Services = () => {
               className="forest-card overflow-hidden flex flex-col h-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`${index === 0 ? 'h-72' : 'h-48'} overflow-hidden rounded-t-xl -mx-6 -mt-6 mb-6`}>
+              <div className={`${index === 0 ? 'h-72' : 'h-48'} overflow-hidden rounded-t-xl -mx-6 -mt-6 mb-6 relative`}>
                 <img 
                   src={service.image} 
                   alt={service.title} 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
                 />
+                {index === 0 && (
+                  <h2 className="absolute bottom-4 left-4 text-white text-2xl font-serif font-medium drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]">
+                    {service.title}
+                  </h2>
+                )}
               </div>
               
               <h3 className="text-xl font-medium text-forest-800 mb-3">{service.title}</h3>
