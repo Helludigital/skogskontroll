@@ -36,6 +36,15 @@ const ForestAnalysis = () => {
                 </li>
               ))}
             </ul>
+            
+            <div className="mt-8">
+              <img 
+                src="/lovable-uploads/95feff30-b178-4a3d-909e-06941f86df2b.png" 
+                alt="Skogsskador AI-analys" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <p className="text-forest-600 text-sm mt-2 italic">Exempel på AI-analys som visar skadade områden markerade i rött</p>
+            </div>
           </div>
           
           <div className="forest-card overflow-hidden p-8">
