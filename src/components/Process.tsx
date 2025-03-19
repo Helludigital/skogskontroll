@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from "@/lib/utils";
@@ -41,11 +42,11 @@ const Process = () => {
     title: "Ortofoto skapas",
     subtitle: "(Snabborto­foto)",
     points: [],
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-12 h-12 text-forest-600">
-          <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
-          <line x1="8" y1="2" x2="8" y2="18"></line>
-          <line x1="16" y1="6" x2="16" y2="22"></line>
-        </svg>
+    icon: <img 
+            src="/lovable-uploads/8922b648-8c92-4966-aee7-59803ae227b6.png" 
+            alt="Topografisk karta" 
+            className="w-12 h-12 text-forest-600"
+          />
   }, {
     title: "Bildanalys med AI",
     points: [],
