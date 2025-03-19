@@ -75,7 +75,7 @@ const Process = () => {
         </div>
         
         {/* Process steps carousel */}
-        <div className="flex overflow-x-auto pb-4 gap-2 mb-6 hide-scrollbar my-0 mx-[240px] px-[42px]">
+        <div className="flex overflow-x-auto pb-4 gap-2 mb-6 hide-scrollbar justify-center mx-auto max-w-2xl">
           {steps.map((step, index) => <button key={index} onClick={() => setActiveStep(index)} className={cn("px-3 py-1.5 rounded-full flex-shrink-0 transition-all text-sm font-medium whitespace-nowrap", activeStep === index ? "bg-forest-500 text-white shadow-md" : "bg-white text-forest-700 hover:bg-forest-100 border border-forest-200")}>
               Steg {index + 1}
             </button>)}
