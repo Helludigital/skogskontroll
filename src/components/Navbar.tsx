@@ -38,17 +38,35 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#tjanster" className="text-forest-700 hover:text-forest-600 transition-colors font-medium">Tjänster</a>
-          <a href="#process" className="text-forest-700 hover:text-forest-600 transition-colors font-medium">Process</a>
-          <a href="#analys" className="text-forest-700 hover:text-forest-600 transition-colors font-medium">AI-analys</a>
-          <a href="#inventering" className="text-forest-700 hover:text-forest-600 transition-colors font-medium">Inventering</a>
-          <a href="#kontakt" className="text-forest-700 hover:text-forest-600 transition-colors font-medium">Kontakt</a>
+          <a href="#tjanster" className={cn(
+            "transition-colors font-medium",
+            scrolled ? "text-forest-700 hover:text-forest-600" : "text-white hover:text-white/80"
+          )}>Tjänster</a>
+          <a href="#process" className={cn(
+            "transition-colors font-medium",
+            scrolled ? "text-forest-700 hover:text-forest-600" : "text-white hover:text-white/80"
+          )}>Process</a>
+          <a href="#analys" className={cn(
+            "transition-colors font-medium",
+            scrolled ? "text-forest-700 hover:text-forest-600" : "text-white hover:text-white/80"
+          )}>AI-analys</a>
+          <a href="#inventering" className={cn(
+            "transition-colors font-medium",
+            scrolled ? "text-forest-700 hover:text-forest-600" : "text-white hover:text-white/80"
+          )}>Inventering</a>
+          <a href="#kontakt" className={cn(
+            "transition-colors font-medium",
+            scrolled ? "text-forest-700 hover:text-forest-600" : "text-white hover:text-white/80"
+          )}>Kontakt</a>
           <a href="#kontakt" className="forest-button">Boka Demo</a>
         </nav>
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden text-forest-700 focus:outline-none"
+          className={cn(
+            "md:hidden focus:outline-none",
+            scrolled ? "text-forest-700" : "text-white"
+          )}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
