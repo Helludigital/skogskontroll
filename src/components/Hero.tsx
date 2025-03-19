@@ -53,14 +53,7 @@ const Hero = () => {
                 className="w-full h-auto rounded object-cover"
               />
             </div>
-            <div className="absolute w-[70%] h-auto left-0 bottom-0 rounded-2xl shadow-2xl overflow-hidden animate-fade-in bg-white/10 backdrop-blur-sm p-4"
-              style={{ animationDelay: "0.8s" }}>
-              <img 
-                src="/lovable-uploads/694c6c71-485b-4a6c-a654-7ef0521419ad.png" 
-                alt="Skogskarta" 
-                className="w-full h-auto rounded object-cover"
-              />
-            </div>
+            {/* Removed the bottom/left forest map image */}
           </div>
         </div>
       </div>
