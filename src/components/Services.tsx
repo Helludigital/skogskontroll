@@ -65,12 +65,13 @@ const Services = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="h-72 overflow-hidden rounded-t-xl -mx-6 -mt-6 mb-6 relative">
+                <div className="absolute inset-0 bg-black/40 z-10"></div>
                 <img 
                   src={service.image} 
                   alt={service.title} 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-700 relative"
                 />
-                <h2 className="absolute bottom-4 left-4 text-white text-2xl font-serif font-medium drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]">
+                <h2 className="absolute bottom-4 left-4 text-white text-2xl font-serif font-medium drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)] z-20">
                   {service.title}
                 </h2>
               </div>
