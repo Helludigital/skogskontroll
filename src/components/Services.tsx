@@ -4,7 +4,7 @@ const Services = () => {
     {
       title: "Skogsinventering",
       description: "Dokumentera och analysera skogsbestånd med högupplösta bilder och AI-analys för exakta data.",
-      image: "/lovable-uploads/38cc3287-9e52-470e-8206-4ab78fd1b9e1.png",
+      image: "/lovable-uploads/e6ba8e02-e775-4850-b97b-5931e41308d4.png",
       features: [
         "Trädfördelning och skogstyper",
         "Volym och densitet",
@@ -64,7 +64,7 @@ const Services = () => {
               className="forest-card overflow-hidden flex flex-col h-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="h-48 overflow-hidden rounded-t-xl -mx-6 -mt-6 mb-6">
+              <div className={`${index === 0 ? 'h-72' : 'h-48'} overflow-hidden rounded-t-xl -mx-6 -mt-6 mb-6`}>
                 <img 
                   src={service.image} 
                   alt={service.title} 
