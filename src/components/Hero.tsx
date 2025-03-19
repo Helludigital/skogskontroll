@@ -48,7 +48,7 @@ const Hero = () => {
             <div className="absolute w-[90%] h-auto right-0 rounded-2xl shadow-2xl overflow-hidden animate-drone-float bg-white/10 backdrop-blur-sm p-4"
               style={{ animationDelay: "0.5s" }}>
               <img 
-                src="/lovable-uploads/d768552c-d511-45b6-ae73-3813d63dbb64.png" 
+                src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" 
                 alt="Drönare över skog" 
                 className="w-full h-auto rounded object-cover"
               />
@@ -69,7 +69,7 @@ const Hero = () => {
         }}
       >
         <img 
-          src="/lovable-uploads/698a6167-7810-4d35-bae0-68f5c8b9a7c3.png" 
+          src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" 
           alt="Flygande drönare" 
           className="w-full h-auto"
         />
