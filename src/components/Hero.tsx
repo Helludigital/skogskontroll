@@ -1,7 +1,21 @@
 
 import { ArrowDown } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section className="relative min-h-screen pt-24 overflow-hidden flex items-center">
       {/* Clean background with subtle gradient */}
@@ -37,6 +51,23 @@ const Hero = () => {
             />
           </div>
         </div>
+      </div>
+      
+      {/* Floating drone image */}
+      <div 
+        className="fixed z-30 w-24 md:w-28 lg:w-32 opacity-80"
+        style={{
+          top: `${30 + scrollY * 0.05}%`,
+          left: `${20 + Math.sin(scrollY * 0.01) * 10}%`,
+          transform: `rotate(${scrollY * 0.05}deg)`,
+          transition: 'transform 0.1s ease-out',
+        }}
+      >
+        <img 
+          src="/lovable-uploads/698a6167-7810-4d35-bae0-68f5c8b9a7c3.png" 
+          alt="Flygande drönare" 
+          className="w-full h-auto"
+        />
       </div>
       
       {/* Scroll indicator */}
