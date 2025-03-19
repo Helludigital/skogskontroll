@@ -1,4 +1,6 @@
 
+import React from 'react';
+
 const ForestAnalysis = () => {
   return (
     <section id="analys" className="py-20 bg-forest-50/70">
@@ -60,8 +62,8 @@ const ForestAnalysis = () => {
             
             <div className="mt-8">
               <img 
-                src="/lovable-uploads/f4ccb8de-7865-4233-a62a-84ca4ce23692.png" 
-                alt="AI-analys exempel" 
+                src="/lovable-uploads/23baee10-bb63-4a2b-b4f6-995c5c2122b1.png" 
+                alt="AI-analys exempel med skogsområde" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
