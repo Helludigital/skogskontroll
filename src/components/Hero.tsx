@@ -77,6 +77,25 @@ const Hero = () => {
         />
       </div>
       
+      {/* Side-scrolling drone image that appears when scrolling down */}
+      <div 
+        className="fixed z-30 w-32 md:w-40 lg:w-48"
+        style={{
+          top: `${60}%`,
+          left: `${Math.min(0, -100 + scrollY * 0.2)}%`, // Starts off-screen (-100%) and moves in as user scrolls
+          transform: `rotate(${-15 + Math.sin(scrollY * 0.02) * 5}deg)`, // Slight rotation with subtle movement
+          opacity: Math.min(1, Math.max(0, (scrollY - 200) / 300)), // Fades in between 200-500px scroll
+          transition: 'transform 0.2s ease-out',
+          display: scrollY > 100 ? 'block' : 'none', // Only show after scrolling 100px
+        }}
+      >
+        <img 
+          src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" 
+          alt="Flygande drönare från sidan" 
+          className="w-full h-auto"
+        />
+      </div>
+      
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-white mb-2 drop-shadow-md">Scroll ner</span>
