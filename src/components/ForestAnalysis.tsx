@@ -1,9 +1,6 @@
-
 import React from 'react';
-
 const ForestAnalysis = () => {
-  return (
-    <section id="analys" className="py-20 bg-forest-50/70">
+  return <section id="analys" className="py-20 bg-forest-50/70">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <h2 className="section-heading">AI-analys för Skogsbruk</h2>
@@ -18,32 +15,17 @@ const ForestAnalysis = () => {
             <h3 className="text-2xl font-medium text-forest-800 mb-6">Vi använder AI-analys till följande åtgärder:</h3>
             
             <ul className="space-y-4">
-              {[
-                "Inventering",
-                "Röjningskarta (stamantal & trädslagsfördelning)",
-                "Gallringskarta",
-                "Slutavverkning",
-                "Planteringskontroll",
-                "Skador (Vindfällen, granbarkborreangrepp, toppbrott)",
-                "Skogsbruksplandata",
-                "Naturvärdesanalys"
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+              {["Inventering", "Röjningskarta (stamantal & trädslagsfördelning)", "Gallringskarta", "Slutavverkning", "Planteringskontroll", "Skador (Vindfällen, granbarkborreangrepp, toppbrott)", "Skogsbruksplandata", "Naturvärdesanalys"].map((item, index) => <li key={index} className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-forest-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-sm font-medium">{index + 1}</span>
                   </div>
                   <span className="text-forest-700">{item}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
             
             <div className="mt-8">
-              <img 
-                src="/lovable-uploads/95feff30-b178-4a3d-909e-06941f86df2b.png" 
-                alt="Skogsskador AI-analys" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              <p className="text-forest-600 text-sm mt-2 italic">Exempel på AI-analys som visar skadade områden markerade i rött</p>
+              <img src="/lovable-uploads/95feff30-b178-4a3d-909e-06941f86df2b.png" alt="Skogsskador AI-analys" className="w-full h-auto rounded-lg shadow-lg" />
+              
             </div>
           </div>
           
@@ -51,30 +33,14 @@ const ForestAnalysis = () => {
             <h3 className="text-2xl font-medium text-forest-800 mb-6">Exempel på information:</h3>
             
             <ul className="space-y-4">
-              {[
-                "Trädslag artfördelning",
-                "Stressade träd",
-                "Granbarkborre angripna träd",
-                "Stormfällda träd",
-                "Virkesvolym",
-                "Trädvolym",
-                "Trädklasser",
-                "Träd antal",
-                "Trädhöjder"
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
+              {["Trädslag artfördelning", "Stressade träd", "Granbarkborre angripna träd", "Stormfällda träd", "Virkesvolym", "Trädvolym", "Trädklasser", "Träd antal", "Trädhöjder"].map((item, index) => <li key={index} className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-forest-500 flex-shrink-0 mt-2"></div>
                   <span className="text-forest-700">{item}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
             
             <div className="mt-8">
-              <img 
-                src="/lovable-uploads/23baee10-bb63-4a2b-b4f6-995c5c2122b1.png" 
-                alt="AI-analys exempel med skogsområde" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
+              <img src="/lovable-uploads/23baee10-bb63-4a2b-b4f6-995c5c2122b1.png" alt="AI-analys exempel med skogsområde" className="w-full h-auto rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -111,17 +77,11 @@ const ForestAnalysis = () => {
             </div>
             
             <div className="md:w-1/2">
-              <img 
-                src="/lovable-uploads/694c6c71-485b-4a6c-a654-7ef0521419ad.png" 
-                alt="Karta över skogsområde" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
+              <img src="/lovable-uploads/694c6c71-485b-4a6c-a654-7ef0521419ad.png" alt="Karta över skogsområde" className="w-full h-auto rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ForestAnalysis;
