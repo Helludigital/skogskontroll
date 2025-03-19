@@ -45,12 +45,13 @@ const Hero = () => {
         
         <div className="md:w-1/2 mt-12 md:mt-0 relative z-10">
           <div className="relative w-full h-[400px] md:h-[500px]">
-            <div className="absolute w-[90%] h-auto right-0 rounded-2xl shadow-2xl overflow-hidden animate-drone-float bg-white/10 backdrop-blur-sm p-4"
+            <div className="absolute w-[90%] h-auto right-0 rounded-2xl shadow-2xl overflow-hidden animate-drone-float p-4"
               style={{ animationDelay: "0.5s" }}>
+              {/* Removed background-color and backdrop-blur from this container div */}
               <img 
                 src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" 
                 alt="Drönare över skog" 
-                className="w-full h-auto rounded object-cover"
+                className="w-full h-auto rounded"
               />
             </div>
             {/* Removed the bottom/left forest map image */}
@@ -60,7 +61,7 @@ const Hero = () => {
       
       {/* Floating drone image */}
       <div 
-        className="fixed z-30 w-24 md:w-28 lg:w-32 opacity-80"
+        className="fixed z-30 w-24 md:w-28 lg:w-32"
         style={{
           top: `${30 + scrollY * 0.05}%`,
           left: `${20 + Math.sin(scrollY * 0.01) * 10}%`,
@@ -68,6 +69,7 @@ const Hero = () => {
           transition: 'transform 0.1s ease-out',
         }}
       >
+        {/* Removed opacity class to show full transparency */}
         <img 
           src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" 
           alt="Flygande drönare" 
