@@ -28,7 +28,7 @@ const Hero = () => {
             Med hjälp av modern drönarteknik och AI-analys ger vi dig precisa data för bättre skogsförvaltning och smartare beslut.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#kontakt" className="forest-button text-center">Boka Konsultation</a>
+            <a href="#kontakt" className="forest-button text-center">Kontakta Oss</a>
             <a href="#tjanster" className="forest-button-secondary text-center bg-white/90 text-forest-800 hover:bg-white">Läs Om Våra Tjänster</a>
           </div>
         </div>
@@ -38,41 +38,32 @@ const Hero = () => {
             <div className="absolute w-[90%] h-auto right-0 rounded-2xl shadow-2xl overflow-hidden animate-drone-float p-4" style={{
             animationDelay: "0.5s"
           }}>
-              {/* Removed background-color and backdrop-blur from this container div */}
               <img src="/lovable-uploads/519c2dd7-0bae-4f10-8809-83beac948dd2.png" alt="Drönare över skog" className="w-full h-auto rounded" />
             </div>
-            {/* Removed the bottom/left forest map image */}
           </div>
         </div>
       </div>
       
-      {/* Floating drone image */}
       <div className="fixed z-30 w-24 md:w-28 lg:w-32" style={{
       top: `${30 + scrollY * 0.05}%`,
       left: `${20 + Math.sin(scrollY * 0.01) * 10}%`,
       transform: `rotate(${scrollY * 0.05}deg)`,
       transition: 'transform 0.1s ease-out'
     }}>
-        {/* Removed opacity class to show full transparency */}
         
       </div>
       
-      {/* Side-scrolling drone image that appears when scrolling down */}
       <div className="fixed z-30 w-32 md:w-40 lg:w-48" style={{
       top: `${60}%`,
       left: `${Math.min(0, -100 + scrollY * 0.2)}%`,
-      // Starts off-screen (-100%) and moves in as user scrolls
       transform: `rotate(${-15 + Math.sin(scrollY * 0.02) * 5}deg)`,
-      // Slight rotation with subtle movement
       opacity: Math.min(1, Math.max(0, (scrollY - 200) / 300)),
-      // Fades in between 200-500px scroll
       transition: 'transform 0.2s ease-out',
-      display: scrollY > 100 ? 'block' : 'none' // Only show after scrolling 100px
+      display: scrollY > 100 ? 'block' : 'none'
     }}>
         
       </div>
       
-      {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-white mb-2 drop-shadow-md">Scroll ner</span>
         <ArrowDown className="w-6 h-6 text-white drop-shadow-md" />
