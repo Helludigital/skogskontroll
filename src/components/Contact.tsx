@@ -33,7 +33,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h4 className="font-medium text-forest-700">E-post</h4>
-                  <p className="text-forest-600">skogskontroll@icloud.com</p>
+                  <p className="text-forest-600">info@skogskontroll.se</p>
                 </div>
               </div>
             </div>
